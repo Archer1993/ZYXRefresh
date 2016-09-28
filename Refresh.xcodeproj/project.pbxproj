@@ -15,6 +15,10 @@
 		9A4213181D9A3C1000A6EAF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4213161D9A3C1000A6EAF7 /* LaunchScreen.storyboard */; };
 		9A4213231D9A3C1000A6EAF7 /* RefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4213221D9A3C1000A6EAF7 /* RefreshTests.m */; };
 		9A42132E1D9A3C1000A6EAF7 /* RefreshUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A42132D1D9A3C1000A6EAF7 /* RefreshUITests.m */; };
+		9A42133E1D9A3C7B00A6EAF7 /* ZYXBaseRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A42133D1D9A3C7B00A6EAF7 /* ZYXBaseRefreshView.m */; };
+		9A4213411D9A3D0000A6EAF7 /* UIScrollView+ZYXRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4213401D9A3D0000A6EAF7 /* UIScrollView+ZYXRefresh.m */; };
+		9A4213441D9A3D7F00A6EAF7 /* ZYXHeaderRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4213431D9A3D7F00A6EAF7 /* ZYXHeaderRefreshView.m */; };
+		9A4213471D9A3D9900A6EAF7 /* ZYXFooterRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4213461D9A3D9900A6EAF7 /* ZYXFooterRefreshView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		9A4213291D9A3C1000A6EAF7 /* RefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A42132D1D9A3C1000A6EAF7 /* RefreshUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshUITests.m; sourceTree = "<group>"; };
 		9A42132F1D9A3C1000A6EAF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A42133C1D9A3C7B00A6EAF7 /* ZYXBaseRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYXBaseRefreshView.h; sourceTree = "<group>"; };
+		9A42133D1D9A3C7B00A6EAF7 /* ZYXBaseRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYXBaseRefreshView.m; sourceTree = "<group>"; };
+		9A42133F1D9A3D0000A6EAF7 /* UIScrollView+ZYXRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ZYXRefresh.h"; sourceTree = "<group>"; };
+		9A4213401D9A3D0000A6EAF7 /* UIScrollView+ZYXRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ZYXRefresh.m"; sourceTree = "<group>"; };
+		9A4213421D9A3D7F00A6EAF7 /* ZYXHeaderRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYXHeaderRefreshView.h; sourceTree = "<group>"; };
+		9A4213431D9A3D7F00A6EAF7 /* ZYXHeaderRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYXHeaderRefreshView.m; sourceTree = "<group>"; };
+		9A4213451D9A3D9900A6EAF7 /* ZYXFooterRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYXFooterRefreshView.h; sourceTree = "<group>"; };
+		9A4213461D9A3D9900A6EAF7 /* ZYXFooterRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYXFooterRefreshView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,7 @@
 			children = (
 				9A42130B1D9A3C1000A6EAF7 /* AppDelegate.h */,
 				9A42130C1D9A3C1000A6EAF7 /* AppDelegate.m */,
+				9A42133B1D9A3C3800A6EAF7 /* Refresh */,
 				9A42130E1D9A3C1000A6EAF7 /* ViewController.h */,
 				9A42130F1D9A3C1000A6EAF7 /* ViewController.m */,
 				9A4213111D9A3C1000A6EAF7 /* Main.storyboard */,
@@ -138,6 +151,21 @@
 				9A42132F1D9A3C1000A6EAF7 /* Info.plist */,
 			);
 			path = RefreshUITests;
+			sourceTree = "<group>";
+		};
+		9A42133B1D9A3C3800A6EAF7 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				9A42133F1D9A3D0000A6EAF7 /* UIScrollView+ZYXRefresh.h */,
+				9A4213401D9A3D0000A6EAF7 /* UIScrollView+ZYXRefresh.m */,
+				9A42133C1D9A3C7B00A6EAF7 /* ZYXBaseRefreshView.h */,
+				9A42133D1D9A3C7B00A6EAF7 /* ZYXBaseRefreshView.m */,
+				9A4213421D9A3D7F00A6EAF7 /* ZYXHeaderRefreshView.h */,
+				9A4213431D9A3D7F00A6EAF7 /* ZYXHeaderRefreshView.m */,
+				9A4213451D9A3D9900A6EAF7 /* ZYXFooterRefreshView.h */,
+				9A4213461D9A3D9900A6EAF7 /* ZYXFooterRefreshView.m */,
+			);
+			path = Refresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +304,10 @@
 				9A4213101D9A3C1000A6EAF7 /* ViewController.m in Sources */,
 				9A42130D1D9A3C1000A6EAF7 /* AppDelegate.m in Sources */,
 				9A42130A1D9A3C1000A6EAF7 /* main.m in Sources */,
+				9A4213441D9A3D7F00A6EAF7 /* ZYXHeaderRefreshView.m in Sources */,
+				9A4213471D9A3D9900A6EAF7 /* ZYXFooterRefreshView.m in Sources */,
+				9A4213411D9A3D0000A6EAF7 /* UIScrollView+ZYXRefresh.m in Sources */,
+				9A42133E1D9A3C7B00A6EAF7 /* ZYXBaseRefreshView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +383,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -397,7 +429,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
